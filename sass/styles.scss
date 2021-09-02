@@ -1,3 +1,5 @@
+$white: hsl(0, 0%, 98%);
+
 * {
   margin: 0;
   padding: 0;
@@ -5,15 +7,122 @@
 
 body {
   font-family: "DM Serif Display";
+  text-align: center;
+  font-size: 16px;
 }
 
 h1 {
-  font-family: Karla;
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  color: $white;
+  margin-bottom: 1rem;
+  font-size: 2.6rem;
 }
+h2 {
+  @extend h1;
+  font-size: 2rem;
+}
+
+p {
+  color: hsl(273, 4%, 51%);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.navbar {
+  padding: 1rem 2rem;
+}
+.top-image-bg {
+  background-image: url("../images/image-intro-mobile.jpg");
+  background-size: 100% 100%;
+  width: 100%;
+}
+.top-image {
+  img {
+    width: 100%;
+    visibility: hidden;
+  }
+}
+
+.top-article {
+  padding: 4rem 1rem;
+  background: url("../images/bg-pattern-intro-right-mobile.svg") no-repeat,
+    url("../images/bg-pattern-intro-left-mobile.svg") no-repeat,
+    hsl(256, 26%, 20%);
+  background-position: 100% -300%, top left;
+}
+
+.button {
+  cursor: pointer;
+  border: 2px solid $white;
+  display: inline-block;
+  color: $white;
+  padding: 0.5rem 1.5rem;
+}
+
+.middle-content {
+  margin-top: 6rem;
+  h1 {
+    color: black;
+  }
+  header {
+    padding: 2rem 0;
+  }
+  img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 2rem;
+  }
+}
+.middle-article {
+  width: 100%;
+}
+
+.black-line {
+  margin: 0 auto;
+  width: 125px;
+  height: 1px;
+  background-color: hsl(273, 4%, 51%);
+}
+
+.bottom-section {
+}
+
+// Reusable
 
 .desktop {
   display: none;
 }
+
+.flex-container {
+  display: flex;
+}
+.flex {
+  flex: 1;
+}
+
+.flex-left {
+  display: flex;
+  flex: 1;
+
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex-right {
+  display: flex;
+  flex: 1;
+
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.vertical-flex-container {
+  display: flex;
+  flex-direction: column;
+}
+
+// End of reusable
 
 @media screen and (min-width: 1052px) {
   .desktop {
@@ -22,5 +131,11 @@ h1 {
 
   .mobile {
     display: none;
+  }
+
+  .top-image-bg {
+    background-image: url("../images/image-intro-desktop.jpg");
+    background-size: 100% 100%;
+    width: 100%;
   }
 }
