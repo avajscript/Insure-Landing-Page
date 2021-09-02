@@ -5,14 +5,136 @@
 
 body {
   font-family: "DM Serif Display";
+  text-align: center;
+  font-size: 16px;
 }
 
-h1 {
-  font-family: Karla;
+h1, h2 {
+  font-family: "DM Serif Display";
+  font-weight: 400;
+  color: #fafafa;
+  margin-bottom: 1rem;
+  font-size: 2.6rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+p {
+  color: #837d87;
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.navbar {
+  padding: 1rem 2rem;
+}
+
+.top-image-bg {
+  background-image: url("../images/image-intro-mobile.jpg");
+  background-size: 100% 100%;
+  width: 100%;
+}
+
+.top-image img {
+  width: 100%;
+  visibility: hidden;
+}
+
+.top-article {
+  padding: 4rem 1rem;
+  background: url("../images/bg-pattern-intro-right-mobile.svg") no-repeat, url("../images/bg-pattern-intro-left-mobile.svg") no-repeat, #2d2640;
+  background-position: 100% -300%, top left;
+}
+
+.button {
+  cursor: pointer;
+  border: 2px solid #fafafa;
+  display: inline-block;
+  color: #fafafa;
+  padding: 0.5rem 1.5rem;
+}
+
+.middle-content {
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+}
+
+.middle-content h1, .middle-content h2 {
+  color: black;
+}
+
+.middle-content header {
+  padding: 2rem 0;
+}
+
+.middle-content img {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 2rem;
+}
+
+.middle-article {
+  width: 100%;
+}
+
+.black-line {
+  margin: 0 auto;
+  width: 125px;
+  height: 1px;
+  background-color: #837d87;
+}
+
+.bottom-section {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.bottom-content {
+  padding: 5rem 2rem;
+  margin-bottom: 8rem;
+  background: url("../images/bg-pattern-how-we-work.svg"), #2d2640;
+}
+
+.bottom-content h1, .bottom-content h2,
+.bottom-content p {
+  color: #fafafa;
+}
+
+.bottom-content .button {
+  margin-top: 2rem;
 }
 
 .desktop {
   display: none;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.flex {
+  flex: 1;
+}
+
+.flex-left {
+  display: flex;
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.flex-right {
+  display: flex;
+  flex: 1;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.vertical-flex-container {
+  display: flex;
+  flex-direction: column;
 }
 
 @media screen and (min-width: 1052px) {
@@ -21,5 +143,10 @@ h1 {
   }
   .mobile {
     display: none;
+  }
+  .top-image-bg {
+    background-image: url("../images/image-intro-desktop.jpg");
+    background-size: 100% 100%;
+    width: 100%;
   }
 }

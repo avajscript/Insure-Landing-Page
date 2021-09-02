@@ -62,6 +62,7 @@ p {
 
 .middle-content {
   margin-top: 6rem;
+  margin-bottom: 6rem;
   h1 {
     color: black;
   }
@@ -86,6 +87,21 @@ p {
 }
 
 .bottom-section {
+  width: 90%;
+  margin: 0 auto;
+}
+
+.bottom-content {
+  padding: 5rem 2rem;
+  margin-bottom: 8rem;
+  background: url("../images/bg-pattern-how-we-work.svg"), hsl(256, 26%, 20%);
+  h1,
+  p {
+    color: $white;
+  }
+  .button {
+    margin-top: 2rem;
+  }
 }
 
 // Reusable
