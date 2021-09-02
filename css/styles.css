@@ -35,14 +35,46 @@ p {
   padding: 1rem 2rem;
 }
 
+.dropdown-icon {
+  cursor: pointer;
+}
+
 .nav-list ul {
   float: right;
 }
 
 .nav-list li {
+  cursor: pointer;
   display: inline-block;
   color: #95a9c6;
   margin-left: 1.6rem;
+}
+
+.top-content {
+  position: relative;
+}
+
+.dropdown {
+  padding: 10% 5%;
+  height: 100%;
+  color: white;
+  font-family: karla;
+  font-weight: 700;
+  position: absolute;
+  width: 100%;
+  background: url("../images/bg-pattern-mobile-nav.svg") no-repeat #2b272f;
+  background-position: center right;
+}
+
+.dropdown ul {
+  width: 90%;
+}
+
+.dropdown li {
+  cursor: pointer;
+  border: 1px solid white;
+  padding: 15px 0;
+  margin: 10px 0;
 }
 
 .top-image-bg {
@@ -68,6 +100,11 @@ p {
   display: inline-block;
   color: #fafafa;
   padding: 0.5rem 1.5rem;
+}
+
+.button:hover {
+  background-color: #fafafa;
+  color: #2d2640;
 }
 
 .middle-content {
@@ -132,6 +169,7 @@ p {
 }
 
 .social-list li i {
+  cursor: pointer;
   color: #95a9c6;
 }
 
@@ -214,6 +252,9 @@ footer {
 }
 
 @media screen and (min-width: 1052px) {
+  .dropdown {
+    display: none !important;
+  }
   .left-background {
     position: absolute;
     left: -13%;
