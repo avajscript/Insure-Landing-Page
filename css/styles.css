@@ -106,6 +106,19 @@ p {
   margin-top: 2rem;
 }
 
+.social-list ul {
+  margin: 1rem 0;
+}
+
+.social-list li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.social-list li i {
+  color: #95a9c6;
+}
+
 .desktop {
   display: none;
 }
@@ -135,6 +148,25 @@ p {
 .vertical-flex-container {
   display: flex;
   flex-direction: column;
+}
+
+.line-bottom {
+  border-bottom: 1px solid #95a9c6;
+  margin-bottom: 3rem;
+}
+
+.footer-list {
+  margin-bottom: 2rem;
+}
+
+.footer-list li:nth-of-type(1) {
+  color: #95a9c6;
+  margin-bottom: 2rem;
+}
+
+.footer-list li {
+  margin-bottom: 0.75rem;
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1052px) {

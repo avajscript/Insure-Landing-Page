@@ -104,6 +104,19 @@ p {
   }
 }
 
+.social-list {
+  ul {
+    margin: 1rem 0;
+  }
+  li {
+    display: inline-block;
+    margin: 0 5px;
+    i {
+      color: hsl(216, 30%, 68%);
+    }
+  }
+}
+
 // Reusable
 
 .desktop {
@@ -138,6 +151,22 @@ p {
   flex-direction: column;
 }
 
+.line-bottom {
+  border-bottom: 1px solid hsl(216, 30%, 68%);
+  margin-bottom: 3rem;
+}
+
+.footer-list {
+  margin-bottom: 2rem;
+  li:nth-of-type(1) {
+    color: hsl(216, 30%, 68%);
+    margin-bottom: 2rem;
+  }
+  li {
+    margin-bottom: 0.75rem;
+    cursor: pointer;
+  }
+}
 // End of reusable
 
 @media screen and (min-width: 1052px) {
